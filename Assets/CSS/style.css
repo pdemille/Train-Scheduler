@@ -1,0 +1,104 @@
+#head-container {
+  margin-top: 1%; 
+  background: none;
+}
+
+.jumbotron {
+  background: none;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 7px;    
+  background: none;
+}
+
+#head {
+  text-align: center;
+  color: white;
+  padding: 2%;
+  background: none;
+}
+
+h1 {
+  font-size: 60px;
+  padding-bottom: 1%;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.panel-custom {
+  color: white ;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+}
+
+.panel-default {
+  color: white ;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+}
+
+table {
+  margin: 0 auto;
+  color: white;   
+}
+
+th {
+  margin: 1% 1% 0 1%;
+  padding: 3% 3% 0 3%;
+  width: 1%;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+}
+
+hr {
+  margin: 1%;
+  color: white;
+}
+
+td {
+  margin: 1% 1% 0 1%;
+  padding: 3% 3% 0 3%;
+  width: 1%;
+}
+
+.btn {
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+  margin: 10px;
+} 
+
+#btn-add {
+  background-color: #4CAF50; /* Green */
+  padding-left: 10%;
+  border: none;
+}
+
+#btn-delete {
+  background-color: red; /* Green */
+  padding-left: 10%;
+  border: none;
+}
+
+
+.form-control:focus {
+  border-color: white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #141f3d;
+  
+}
+
+.form-group{
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+
+}
+
+body {
+  background: url(../images/train.jpg) center center fixed ; 
+  background-repeat: no-repeat;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}

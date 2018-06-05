@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hogwartz Railway Schedule</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <!-- Main Header -->
+    <div class="container" id="head-container">
+        <div class="jumbotron" id="head">
+            <h1> Hogwartz Railway </h1>
+            <h3>Platform 9 3/4</h3>
+        </div>
+    </div>
+
+    <!-- Main Body Container -->
+    <div class="container">
+        <!-- Current Train Schedule (this will be added to in the next section) -->
+        <div class="panel panel-default">
+            <div class="panel-heading panel-custom">
+                Current Train Schedule
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Minutes Away</th>
+                    <th scope="col">Next Arrival</th>
+                </tr>
+                <tbody id="table-data"></tbody>
+            </table>
+        </div>
+
+        <!-- Add Train (similar to a table) -->
+        <div class="panel panel-default">
+            <div class="panel-heading panel-custom">  Add Train </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name:</label>
+                        <input type="text" class="form-control" id="train-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="train-destination" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="startYear">First Train Time: (Military Time) </label>
+                        <input type="text" class="form-control" placeholder="HH:MM" id="train-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">Frequency (In Minutes)</label>
+                        <input type="text" class="form-control" id="time-freq">
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="btn-add" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" id="btn-delete" class="btn btn-primary">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/apps.js"></script>
+</body>
+
+</html>
+
